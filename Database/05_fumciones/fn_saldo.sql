@@ -1,0 +1,6 @@
+CREATE FUNCTION fn_TotalMovimientos()
+RETURNS INT
+AS
+BEGIN
+    RETURN (SELECT COUNT(*) FROM Movimientos)
+END
